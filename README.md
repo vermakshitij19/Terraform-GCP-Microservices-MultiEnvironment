@@ -134,19 +134,6 @@ terraform destroy
 
 Review the destroy plan carefully. Do not run the command from the wrong environment. The state buckets are separate and protected by their bootstrap lifecycle rule.
 
-## Suggested next steps
 
-1. Put the repository in Git; commit `.terraform.lock.hcl` files after each root's `terraform init`.
-2. Add Cloud Logging/Monitoring dashboards and alerting.
-3. Add Artifact Registry images for each microservice.
-4. Add Cloud SQL/Firestore or another data layer, with private connectivity and least-privilege service identities.
-5. Add CI/CD `fmt`, `validate`, security scanning and plan review; require approval for Prod.
-6. Put state buckets in a dedicated state project and tightly restrict state access. Terraform state can contain sensitive values.
 
-## Official docs
 
-- [Terraform GCS backend and locking](https://developer.hashicorp.com/terraform/language/backend/gcs)
-- [Google Cloud Terraform security best practices](https://docs.cloud.google.com/docs/terraform/best-practices/security)
-- [Google Cloud Terraform root-module best practices](https://docs.cloud.google.com/docs/terraform/best-practices/root-modules)
-- [Cloud Run Direct VPC egress](https://docs.cloud.google.com/run/docs/configuring/vpc-direct-vpc)
-- [Cloud Run v2 Terraform resource](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/cloud_run_v2_service)
