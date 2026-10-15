@@ -1,0 +1,6 @@
+# Copy this file to terraform.tfvars and replace the project ID.
+project_id    = "REPLACE_WITH_EXISTING_PROD_PROJECT_ID"
+environment   = "prod"
+region        = "asia-south1"
+subnet_cidr   = "10.30.0.0/24"
+service_image = "us-docker.pkg.dev/cloudrun/container/hello"

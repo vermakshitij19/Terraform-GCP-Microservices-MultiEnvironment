@@ -1,0 +1,12 @@
+# Terraform working directories and local state
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+
+# Environment-specific variable files may contain IDs or sensitive inputs
+**/terraform.tfvars
+**/*.auto.tfvars
+

@@ -1,0 +1,5 @@
+# Optional: copy to terraform.tfvars and set a dedicated state/platform project.
+# The default is the existing learning project devops-504813.
+state_project_id = "devops-504813"
+region           = "asia-south1"
+bucket_prefix    = "replace-with-a-unique-lowercase-prefix"
